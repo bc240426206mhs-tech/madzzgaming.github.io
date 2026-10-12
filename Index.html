@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madzz Gaming - Official Hub</title>
+  <style>
+    :root {
+      --bg: #0d0f12;
+      --card-bg: #161920;
+      --accent: #ff4757;
+      --text: #ffffff;
+      --subtext: #a0a5b5;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    body { background-color: var(--bg); color: var(--text); display: flex; flex-direction: column; align-items: center; padding: 20px; min-height: 100vh; }
+    header { text-align: center; margin-bottom: 30px; }
+    h1 { font-size: 2.5rem; color: var(--accent); letter-spacing: 2px; text-transform: uppercase; }
+    p.tagline { color: var(--subtext); margin-top: 5px; font-size: 1.1rem; }
+    
+    .social-links { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin: 20px 0; }
+    .btn { background: var(--card-bg); color: var(--text); padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; border: 1px solid #2a2e3d; transition: 0.3s; }
+    .btn:hover { background: var(--accent); color: white; border-color: var(--accent); transform: translateY(-2px); }
+    
+    .container { width: 100%; max-width: 900px; display: flex; flex-direction: column; gap: 25px; }
+    .card { background: var(--card-bg); padding: 20px; border-radius: 12px; border: 1px solid #232733; }
+    .card h2 { margin-bottom: 15px; color: var(--accent); font-size: 1.4rem; }
+    
+    .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; }
+    .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+    
+    footer { margin-top: auto; padding: 20px; color: var(--subtext); font-size: 0.9rem; text-align: center; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Madzz Gaming</h1>
+    <p class="tagline">Gaming Gameplay, Live Streams & Guides</p>
+  </header>
+
+  <div class="social-links">
+    <a href="https://youtube.com" target="_blank" class="btn">🔴 YouTube Channel</a>
+    <a href="https://kick.com" target="_blank" class="btn">🟢 Kick Stream</a>
+    <a href="https://tiktok.com" target="_blank" class="btn">📱 TikTok / Shorts</a>
+    <a href="https://discord.gg" target="_blank" class="btn">💬 Discord Server</a>
+  </div>
+
+  <div class="container">
+    <!-- Featured Video Section -->
+    <div class="card">
+      <h2>🔥 Latest Upload</h2>
+      <div class="video-container">
+        <!-- Replace YOUR_YOUTUBE_VIDEO_ID with your video ID -->
+        <iframe src="https://www.youtube.com/embed/YOUR_YOUTUBE_VIDEO_ID" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Live Stream Section -->
+    <div class="card">
+      <h2>📡 Live Stream / Featured Stream</h2>
+      <div class="video-container">
+        <!-- Replace YOUR_KICK_USERNAME with your Kick handle -->
+        <iframe src="https://player.kick.com/YOUR_KICK_USERNAME" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© Madzz Gaming. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
